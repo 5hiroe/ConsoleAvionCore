@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GQtU4PKhxP06Fn4wFTRiYHxLwNxPUrxE/IsxHls6wC7Iw0zgmRe0tCVUhZYphhEYHlyHtImbu/9mIVO0zNrQhg==",
+  "success": true,
+  "projectFilePath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
+  "expectedPackageFiles": [
+    "/home/nathan/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/nathan/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/nathan/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.20/microsoft.netcore.app.host.linux-x64.3.1.20.nupkg.sha512"
+  ],
+  "logs": []
+}

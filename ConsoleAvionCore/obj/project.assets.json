@@ -1,0 +1,102 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LibraryAvion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LibraryAvion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryAvion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LibraryAvion/1.0.0": {
+      "type": "project",
+      "path": "../LibraryAvion/LibraryAvion.csproj",
+      "msbuildProject": "../LibraryAvion/LibraryAvion.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "LibraryAvion >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/nathan/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
+      "projectName": "ConsoleAvionCore",
+      "projectPath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
+      "packagesPath": "/home/nathan/.nuget/packages/",
+      "outputPath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/nathan/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj": {
+              "projectPath": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[3.1.20, 3.1.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
