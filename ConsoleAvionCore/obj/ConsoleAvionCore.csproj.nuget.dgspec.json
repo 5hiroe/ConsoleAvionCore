@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\ConsoleAvionCore.csproj": {}
   },
   "projects": {
-    "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj": {
+    "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\ConsoleAvionCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\ConsoleAvionCore.csproj",
         "projectName": "ConsoleAvionCore",
-        "projectPath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
-        "packagesPath": "/home/nathan/.nuget/packages/",
-        "outputPath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\ConsoleAvionCore.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nathan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,8 +26,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj": {
-                "projectPath": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj"
+              "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj": {
+                "projectPath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj"
               }
             }
           }
@@ -53,16 +53,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.20, 3.1.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.18, 3.1.18]"
             }
           ],
           "frameworkReferences": {
@@ -70,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj": {
+    "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj",
         "projectName": "LibraryAvion",
-        "projectPath": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj",
-        "packagesPath": "/home/nathan/.nuget/packages/",
-        "outputPath": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nathan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -117,22 +109,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

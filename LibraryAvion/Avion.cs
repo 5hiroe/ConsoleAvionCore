@@ -47,7 +47,10 @@ namespace LibraryAvion
         {
             get
             {
-                /** TODO : A faire **/
+                int placeRestantes = nbPlace - ListPassager.Count;
+                double tauxRemplissage = (placeRestantes * 100.0) / nbPlace;
+
+                return tauxRemplissage;
             }
         }
         public List<AvionPassager> ListPassager
@@ -61,11 +64,8 @@ namespace LibraryAvion
         {
             get
             {
-                /* TODO : A faire
-                 * 
-                 * Doit renvoyer le taux de remplissage, total des billets Business, Eco et Premier
-                 * 
-                 **/
+                return ("L'avion est rempli à " + TauxRemplissage + "%, il y a " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Eco) + "réservations en classe Eco, " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Business) + "réservations en classe Buisness, et " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Premier) +"réservations en classe Premier.");
+
             }
         }
         #endregion
@@ -114,12 +114,38 @@ namespace LibraryAvion
             if (p != null)
                 return false; // Le passager existe déjà
 
+            if (NbPlace <= ListPassager.Count)
+                return false; //L'avion est plein
+
+            if (avionPassager.TypePlacePassager == AvionPassager.TypePlace.Business)
+            {
+                if (RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Business).Count >= maxPlaceBusiness)
+                {
+                    return false; //Il n'y a plus de place en Buisness
+                }
+            }
+            if (avionPassager.TypePlacePassager == AvionPassager.TypePlace.Eco)
+            {
+                if (RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Eco).Count >= maxPlaceEco)
+                {
+                    return false; //Il n'y a plus de place en Eco
+                }
+            }
+            if (avionPassager.TypePlacePassager == AvionPassager.TypePlace.Premier)
+            {
+                if (RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Premier).Count >= maxPlacePremier)
+                {
+                    return false; //Il n'y a plus de place en Premier
+                }
+            }
+            
             /* TODO : Ajouter uniquement si les contraintes sont respectées : nb place et type de place
              * 
              *
              * A chaque ajout d'un passager il gagne 2 points de fidélités
              *
              */
+            avionPassager.Passager.PointFidelite += 2;
             listeAvionPassagers.Add(avionPassager);
             return true;
         }
@@ -144,11 +170,29 @@ namespace LibraryAvion
         #region Méthodes de recherche
         public AvionPassager RechercherAvionPassager(int id)
         {
-            /* TODO : A faire */
+            foreach (var passager in listeAvionPassagers)
+            {
+                if (passager.Passager.Id == id)
+                {
+                    return passager;
+                }
+            }
+
+            return null;
         }
         public List<AvionPassager> RechercherAvionPassagerTypePlace(AvionPassager.TypePlace typePlace)
         {
-            /* TODO : A faire */
+            List<AvionPassager> listTemp = new List<AvionPassager>();
+            
+            foreach (var passager in listeAvionPassagers)
+            {
+                if (passager.TypePlacePassager == typePlace)
+                {
+                    listTemp.Add(passager);
+                }
+            }
+
+            return listTemp;
         }
         #endregion
     }
