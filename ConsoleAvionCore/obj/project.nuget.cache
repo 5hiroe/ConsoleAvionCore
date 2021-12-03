@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SpKVeXKxeVqhZlwHP2tPx1cOwImmNfrbAsCy5pK+SDrpE9bYAgbXd1ICY36fkjUakvr5axBTTVx8X4oDPHqOsA==",
+  "dgSpecHash": "GQtU4PKhxP06Fn4wFTRiYHxLwNxPUrxE/IsxHls6wC7Iw0zgmRe0tCVUhZYphhEYHlyHtImbu/9mIVO0zNrQhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\ConsoleAvionCore\\ConsoleAvionCore.csproj",
+  "projectFilePath": "/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/ConsoleAvionCore.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+    "/home/nathan/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/nathan/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/nathan/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.20/microsoft.netcore.app.host.linux-x64.3.1.20.nupkg.sha512"
   ],
   "logs": []
 }

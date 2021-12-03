@@ -56,7 +56,7 @@ namespace ConsoleAvionCore
             // Affichage
             foreach (AvionPassager avionPassager in passagers)
             {
-                avionPassager.Identite();
+                Console.WriteLine(avionPassager.Passager.Identite);
             }
         }
 
@@ -65,7 +65,7 @@ namespace ConsoleAvionCore
             // Affichage
             foreach (Avion avion in avions)
             {
-                Console.WriteLine(avion.FicheDescriptive);
+                Console.WriteLine("Avion n° " + avion.Id);
             }
         }
     }

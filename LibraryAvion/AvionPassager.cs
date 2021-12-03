@@ -9,9 +9,6 @@ namespace LibraryAvion
         public enum TypePlace { Business, Premier, Eco };
         private Passager passager;
 
-
-
-
         public TypePlace TypePlacePassager { get; set; }
 
         public Passager Passager

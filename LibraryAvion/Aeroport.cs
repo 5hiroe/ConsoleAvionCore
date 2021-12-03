@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LibraryAvion
@@ -63,12 +64,16 @@ namespace LibraryAvion
 
         public List<Avion> RechercherAvionsRemplissage(double tauxRemplissage)
         {
-            /* TODO : A faire 
-             * 
-             * Retourne tous les avions dont le taux de remplissage est inférieur ou égal à celui indiqué
-             * 
-             **/
-            return null;
+            List<Avion> listTemp = new List<Avion>();
+            
+            foreach (var avion in listeAvions)
+            {
+                if (avion.TauxRemplissage <= tauxRemplissage)
+                {
+                    listTemp.Add(avion);
+                }
+            }
+            return listTemp;
         }
         #endregion
 
@@ -80,31 +85,46 @@ namespace LibraryAvion
 
             foreach (Avion avion in listeAvions)
             {
-                /* TODO : Ajouter la FicheDescriptive dans l'Avion
-                 * 
-                 * La fiche descriptive doit indiquer au moins le taux de remplissage et le montant HT des billets des passagers
-                 * 
-                 *
-                 * se souvenir que :
-                 * 
-                 * 10 % => place Business, prix 300 €
-                 * 20 % => place Premier, prix 210 €
-                 * le reste => place Eco, prix 90 €
-                 * 
-                 */
                 Console.WriteLine(avion.FicheDescriptive);
             }
         }
 
         public List<AvionPassager> PassagersAvions()
         {
+            List<AvionPassager> listTemp = new List<AvionPassager>();
+            bool isHere = false;
+            foreach (var avion in listeAvions)
+            {
+                foreach (var avionPassager in avion.ListeAvionPassagers)
+                {
+                    if (listTemp.Count != 0)
+                    {
+                        foreach (var element in listTemp)
+                        {
+                            if (element.Passager == avionPassager.Passager)
+                            {
+                                isHere = true;
+                            }
+                        }
+                    }
+
+                    if (!isHere)
+                    { 
+                        listTemp.Add(avionPassager);
+                    }
+
+                    isHere = false;
+
+                }
+            }
+
+            return listTemp;
             /* TODO : retourne la liste des passagers ayant pris l'avion
              * 
              * ATTENTION : un passager ayant prix 2 avions différents ne doit apparaitre qu'une seule fois !!
              * 
              */
-			 
-			 return null;
+
         }
 
 
@@ -114,10 +134,19 @@ namespace LibraryAvion
         }
         public List<Avion> AvionsPassager(int id)
         {
-            /* TODO : retourne la liste des avions pris par le passager
-             * 
-             */
-			 return null;
+            List<Avion> listTemp = new List<Avion>();
+
+            foreach (var avion in listeAvions)
+            {
+                foreach (var avionPassager in avion.ListeAvionPassagers)
+                {
+                    if (avionPassager.Passager.Id == id)
+                    {
+                        listTemp.Add(avion);
+                    }
+                }
+            }
+            return listTemp;
         }
     }
 }

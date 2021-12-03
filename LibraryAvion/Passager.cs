@@ -43,6 +43,14 @@ namespace LibraryAvion
 		    set => pointFidelite = value;
 	    }
 
+	    public string Identite
+	    {
+		    get
+		    {
+			    return (Nom + ", né le " + DateNaissance.ToString("D") + " Dispose de " + PointFidelite + " Points fidélité");
+		    }
+	    }
+
 	    #endregion
 
 	    #region Constructeurs
@@ -61,9 +69,5 @@ namespace LibraryAvion
 	    }
 
 	    #endregion
-
-			
-			
-	    /* TODO : écrire les propriétés : Id, Nom, DateNaissance et PointFidelite */
 	}
 }

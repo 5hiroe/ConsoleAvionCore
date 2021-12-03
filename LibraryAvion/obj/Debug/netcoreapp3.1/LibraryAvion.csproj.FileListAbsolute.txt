@@ -1,0 +1,10 @@
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/bin/Debug/netcoreapp3.1/LibraryAvion.deps.json
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/bin/Debug/netcoreapp3.1/LibraryAvion.dll
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/bin/Debug/netcoreapp3.1/LibraryAvion.pdb
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.csproj.AssemblyReference.cache
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.GeneratedMSBuildEditorConfig.editorconfig
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.AssemblyInfoInputs.cache
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.AssemblyInfo.cs
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.csproj.CoreCompileInputs.cache
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.dll
+/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/obj/Debug/netcoreapp3.1/LibraryAvion.pdb

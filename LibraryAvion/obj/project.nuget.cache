@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NklcX/cH5ObYqR/ydwl83veXjf1HIYOtEJS68IAWGblHE7oimk2a+onePqCqZmuG1mcCceYaJLHtWGP/YT/Zcg==",
+  "dgSpecHash": "3thkg2pEmLHRB5wdm88W7Gyf/PF6b9izGRhXWtqr3I5p5hqZZfvqCT3hBPlZ7dSR3rV8iv2UqdttnuLglj38qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\RiderProjects\\ConsoleAvionCore\\LibraryAvion\\LibraryAvion.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/nathan/ConsoleAvionCore - Etudiant/LibraryAvion/LibraryAvion.csproj",
+  "expectedPackageFiles": [
+    "/home/nathan/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/nathan/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

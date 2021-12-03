@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleAvionCore/1.0.0": {
+        "dependencies": {
+          "LibraryAvion": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleAvionCore.dll": {}
+        }
+      },
+      "LibraryAvion/1.0.0": {
+        "runtime": {
+          "LibraryAvion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleAvionCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryAvion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

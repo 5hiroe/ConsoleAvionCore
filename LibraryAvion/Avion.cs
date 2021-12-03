@@ -14,10 +14,12 @@ namespace LibraryAvion
         private int id;
         private int nbPlace;
 
+        private double tauxRemplissage;
         private int maxPlaceBusiness;
         private int maxPlacePremier;
         private int maxPlaceEco;
         private List<AvionPassager> listeAvionPassagers;
+        
         #endregion
 
         #region Propriétés
@@ -46,28 +48,50 @@ namespace LibraryAvion
         public double TauxRemplissage
         {
             get
-            {
-                int placeRestantes = nbPlace - ListPassager.Count;
-                double tauxRemplissage = (placeRestantes * 100.0) / nbPlace;
+            { 
+                tauxRemplissage = (ListeAvionPassagers.Count * 100.0) / nbPlace;
 
                 return tauxRemplissage;
             }
         }
-        public List<AvionPassager> ListPassager
+        public List<AvionPassager> ListeAvionPassagers
         {
             get
             {
                 return listeAvionPassagers;
+            }
+            set
+            {
+                listeAvionPassagers = value;
             }
         }
         public string FicheDescriptive
         {
             get
             {
-                return ("L'avion est rempli à " + TauxRemplissage + "%, il y a " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Eco) + "réservations en classe Eco, " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Business) + "réservations en classe Buisness, et " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Premier) +"réservations en classe Premier.");
+                return ("L'avion " + Id + " est rempli à " + TauxRemplissage.ToString("F1") + "%, il y a " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Eco).Count + " réservations en classe Eco (" +PRIX_ECO +"€), " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Business).Count + " réservations en classe Buisness (" +PRIX_BUSINESS +"€), et " + RechercherAvionPassagerTypePlace(AvionPassager.TypePlace.Premier).Count +" réservations en classe Premier (" +PRIX_PREMIER +"€).");
 
             }
         }
+
+        public int MaxPlaceBusiness
+        {
+            get => maxPlaceBusiness;
+            set => maxPlaceBusiness = value;
+        }
+
+        public int MaxPlacePremier
+        {
+            get => maxPlacePremier;
+            set => maxPlacePremier = value;
+        }
+
+        public int MaxPlaceEco
+        {
+            get => maxPlaceEco;
+            set => maxPlaceEco = value;
+        }
+
         #endregion
 
         #region Constructeur
@@ -75,14 +99,14 @@ namespace LibraryAvion
         {
             Id = id;
             NbPlace = nbPlace;
-            /* TODO : se souvenir que :
-             * 
-             * 10 % => place Business, prix 300 €
-             * 20 % => place Premier, prix 210 €
-             * le reste => place Eco, prix 90 €
-             * 
-             */
+
+            MaxPlaceBusiness = (10 * NbPlace) / 100;
+            MaxPlacePremier = (20 * NbPlace) / 100;
+            MaxPlaceEco = NbPlace - MaxPlaceBusiness - MaxPlacePremier;
+
+            ListeAvionPassagers = new List<AvionPassager>();
         }
+        
         #endregion
 		
 
@@ -114,7 +138,7 @@ namespace LibraryAvion
             if (p != null)
                 return false; // Le passager existe déjà
 
-            if (NbPlace <= ListPassager.Count)
+            if (NbPlace <= ListeAvionPassagers.Count)
                 return false; //L'avion est plein
 
             if (avionPassager.TypePlacePassager == AvionPassager.TypePlace.Business)
@@ -170,11 +194,11 @@ namespace LibraryAvion
         #region Méthodes de recherche
         public AvionPassager RechercherAvionPassager(int id)
         {
-            foreach (var passager in listeAvionPassagers)
+            foreach (var avionPassager in listeAvionPassagers)
             {
-                if (passager.Passager.Id == id)
+                if (avionPassager.Passager.Id == id)
                 {
-                    return passager;
+                    return avionPassager;
                 }
             }
 
@@ -184,7 +208,7 @@ namespace LibraryAvion
         {
             List<AvionPassager> listTemp = new List<AvionPassager>();
             
-            foreach (var passager in listeAvionPassagers)
+            foreach (var passager in ListeAvionPassagers)
             {
                 if (passager.TypePlacePassager == typePlace)
                 {

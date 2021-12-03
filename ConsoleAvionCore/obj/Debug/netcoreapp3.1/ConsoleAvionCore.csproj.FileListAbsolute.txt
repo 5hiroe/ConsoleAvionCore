@@ -1,0 +1,16 @@
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore.deps.json
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore.runtimeconfig.json
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore.runtimeconfig.dev.json
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore.dll
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/ConsoleAvionCore.pdb
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/LibraryAvion.dll
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/bin/Debug/netcoreapp3.1/LibraryAvion.pdb
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.csproj.AssemblyReference.cache
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.GeneratedMSBuildEditorConfig.editorconfig
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.AssemblyInfoInputs.cache
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.AssemblyInfo.cs
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.csproj.CoreCompileInputs.cache
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.dll
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.pdb
+/home/nathan/ConsoleAvionCore - Etudiant/ConsoleAvionCore/obj/Debug/netcoreapp3.1/ConsoleAvionCore.genruntimeconfig.cache
